@@ -16,11 +16,57 @@ ul.socials {
 
 ul.socials li {
   display: inline-block;
-  background-color: ##9b59b6;
+  background-color: #9b59b6;
   border: 2px solid #fff;
   border-radius: 5px;
 }
 
 ul.socials li a{
   color: #fff !important;
+}
+
+main-nav {
+    background-color: #9b59b6;
+    border : 1px dashed #fff;
+}
+
+nav .nav-item a {
+  font-size: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav .nav-item:hover {
+  background-color: #8e44ad;
+  transition: background-color .3s ease;
+  border-radius: 5px;
+}
+
+footer {
+  border-top: 1px solid #8e44ad;
+  border-bottom: 1px solid #8e44ad;
+  background-color: #fff;
+  height: 60px;
+
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer ul li a {
+  font-size: 1.1em;
+  color: #9b59b6 !important;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: #8e44ad;
 }
