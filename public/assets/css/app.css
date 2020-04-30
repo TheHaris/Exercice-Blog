@@ -1,0 +1,26 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d4d4d4;
+}
+
+div.logo h2 {
+  color: #9b59b6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px;
+}
+
+ul.socials {
+  list-style: none;
+}
+
+ul.socials li {
+  display: inline-block;
+  background-color: ##9b59b6;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+ul.socials li a{
+  color: #fff !important;
+}
