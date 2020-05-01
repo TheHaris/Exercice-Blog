@@ -70,3 +70,41 @@ footer ul li a:hover {
   text-decoration: none;
   color: #8e44ad;
 }
+
+div.post,
+.post {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+p.added {
+  width: 70%
+  border: 1px dashed #b790c7;
+  padding: 10px;
+  color: #2b2b2b;
+  border-radius: 5px;
+}
+
+a.username {
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+a.username:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-default{
+  background-color: #b790c7;
+  padding: 10px;
+  color: #fff !important;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.btn-default:hover {
+  background-color: #9b59b6;
+}
