@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\PostsRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\PostRepository")
  */
-class Posts
+class Post
 {
     /**
      * @ORM\Id()
@@ -29,10 +29,10 @@ class Posts
     /**
      * @ORM\Column(type="datetime")
      */
-    private $PostDate;
+    private $postDate;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text")
      */
     private $content;
 
@@ -67,12 +67,12 @@ class Posts
 
     public function getPostDate(): ?\DateTimeInterface
     {
-        return $this->PostDate;
+        return $this->postDate;
     }
 
-    public function setPostDate(\DateTimeInterface $PostDate): self
+    public function setPostDate(\DateTimeInterface $postDate): self
     {
-        $this->PostDate = $PostDate;
+        $this->postDate = $postDate;
 
         return $this;
     }
