@@ -15,10 +15,14 @@ class BlogController extends AbstractController
     {
       $posts = $this->getDoctrine()->getRepository(Post::class)
                     ->findBy([],['postDate'=>'DESC']);
-                    dump($posts);
+
+      $latests = $this->getDoctrine()
+                      ->getRepository(Post::class)
+                      ->getLatest();
 
         return $this->render('blog/index.html.twig', [
             'posts' => $posts,
+            'latests' => $latests
         ]);
     }
 }
