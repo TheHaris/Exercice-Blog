@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+  <section>
+    {{ form_start(form) }}
+    {{form_row(form.title)}}
+    {{form_row(form.author)}}
+    {{form_row(form.content)}}
+<button type="submit" class="btn btn-primary">Valider</button>
+
+    {{form_end(form)}}
+
+  </section>
+{% endblock %}

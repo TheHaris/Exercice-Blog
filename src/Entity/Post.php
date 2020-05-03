@@ -36,6 +36,11 @@ class Post
      */
     private $content;
 
+    public function __construct()
+    {
+      $this->postDate = new \Datetime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;

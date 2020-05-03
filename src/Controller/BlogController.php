@@ -3,11 +3,14 @@
 namespace App\Controller;
 
 use App\Entity\Post;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 class BlogController extends AbstractController
 {
+
     /**
      * @Route("/", name="blog")
      */
@@ -44,4 +47,5 @@ class BlogController extends AbstractController
             'latests' => $latests
       ]);
     }
+
 }
