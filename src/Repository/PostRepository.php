@@ -51,7 +51,7 @@ class PostRepository extends ServiceEntityRepository
     {
       return $this->createQueryBuilder('p')->select('p')
         ->setMaxResults(5)
-        ->orderBy('p.time','DESC')
+        ->orderBy('p.postDate','DESC')
         ->getQuery()
         ->getResult();
     }
