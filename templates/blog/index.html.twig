@@ -11,6 +11,7 @@
         <p class="added"><a href="#" class="username">Haris</a>{{post.postDate|date("F jS \\à g:ia")}}</p>
         <p>{{post.content}}</p>
         <a href="{{path('blog_show',{'title':post.title})}}" class="btn btn-default float-left text-capitalize">Lire la suite</a>
+        <a href="{{path('blog_delete',{'id':post.id})}}" class="btn btn-danger float-left text-capitalize">Supprimer</a>
       </div>
     </div>
     {% endfor %}

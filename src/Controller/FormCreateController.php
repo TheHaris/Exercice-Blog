@@ -33,7 +33,7 @@ class FormCreateController extends AbstractController
 
 
      /**
-     * @Route("/edit/{id}", name="blog_edit")
+     * @Route("/blog/edit/{id}", name="blog_edit")
      */
      public function edit(Post $post,Request $request)
      {
@@ -43,10 +43,26 @@ class FormCreateController extends AbstractController
             $this->entityManager->flush();
             return new RedirectResponse (
             $this->router->generate('blog')
-        );
+            );
           }
       return $this->render('edit.html.twig', [
         'form' => $form->createView()
       ]);
      }
+
+      /**
+     * @Route("/blog{id}", name="blog_delete")
+     */
+     public function delete(Post $post)
+     {
+      $this->entityManager->remove($post);
+      $this->entityManager->flush();
+      return new RedirectResponse (
+        $this->router->generate('blog')
+      );
+     }
+
+
+
+
 }
